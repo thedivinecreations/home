@@ -11,7 +11,7 @@ const MainScreen = () => {
         <h2 className="mx-1 my-8 text-2xl">
           Make Your Business Shine On The Web
         </h2>
-        <button className="button">
+        <button class="button">
           <a href="#contact">Get A Quote</a>
         </button>
       </div>
