@@ -4,11 +4,11 @@ import LoGo from "../public/LoGo.png";
 const Navbar = () => {
   return (
     <header className="sticky top-0 z-10 text-xl font-normal text-white bg-black pottaOne ">
-      <div className="flex flex-col flex-wrap items-center p-4 mx-auto md:flex-row">
+      <div className="flex flex-col flex-wrap items-center justify-center p-4 mx-auto md:flex-row">
         <a href="#" className="mx-8">
           <Image src={LoGo} height={60} width={90} />
         </a>
-        <nav className="flex flex-wrap items-center justify-center text-base md:ml-auto">
+        <nav className="flex items-center justify-center my-4 text-base md:ml-auto ">
           <a className="link" href="#services">
             Services
           </a>
@@ -22,9 +22,9 @@ const Navbar = () => {
             Testimonial
           </a>
         </nav>
-        <button className="mx-4 button">
-          <a href="#contact">Get A Quote</a>
-        </button>
+        <a className="hidden mx-4 button sm:inline-block " href="#contact">
+          Get A Quote
+        </a>
       </div>
     </header>
   );

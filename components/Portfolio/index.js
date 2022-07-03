@@ -7,9 +7,11 @@ import Link from "next/link";
 const Portfolio = () => {
   return (
     <div className="relative flex flex-col items-center">
-      <h1 className="p-3 my-32 text-3xl border-b-2 border-white">Portfolio</h1>
-      <div className="flex items-center space-x-16">
-        <div className="h-auto p-8 text-xl border border-white rounded-md lg:w-96 lg:h-auto">
+      <h1 className="p-3 my-32 text-3xl border-b-2 border-white heading">
+        Portfolio
+      </h1>
+      <div className="flex flex-col items-center sm:space-x-16 sm:flex-row">
+        <div className="h-auto p-8 text-xl border border-white rounded-md w-72 sm:w-auto lg:w-96 lg:h-auto">
           <div className="pb-4 mb-4 border-b border-white">
             Website Development
           </div>
@@ -32,7 +34,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col w-72 sm:w-auto">
           <div className="flex flex-col justify-center h-auto p-4 px-8 my-4 text-center border border-white rounded-md lg:w-96 lg:h-40">
             <div className="pb-4 mb-2 -mt-2 border-b border-white">
               Photo & Video Editing

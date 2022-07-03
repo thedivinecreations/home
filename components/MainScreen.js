@@ -11,9 +11,9 @@ const MainScreen = () => {
         <h2 className="mx-1 my-8 text-2xl">
           Make Your Business Shine On The Web
         </h2>
-        <button className="button">
-          <a href="#contact">Get A Quote</a>
-        </button>
+        <a className=" button" href="#contact">
+          Get A Quote
+        </a>
       </div>
       <div className="hidden z-1 lg:flex">
         <Image src={Main} height="494px" width="694px" />

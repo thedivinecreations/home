@@ -24,7 +24,7 @@ const Datas = [
 const Testimonials = () => {
   return (
     <div className="relative flex flex-col items-center">
-      <h1 className="p-3 my-32 text-3xl border-b-2 border-white">
+      <h1 className="p-3 my-32 text-3xl border-b-2 border-white heading">
         Testimonials
       </h1>
 

@@ -1,4 +1,3 @@
-import { useCallback } from "react";
 import Star from "./Star";
 
 const Card = ({ name, stars, text }) => {
@@ -7,7 +6,7 @@ const Card = ({ name, stars, text }) => {
       <div className="my-4 text-2xl">{name}</div>
       <div className="flex">
         {Array(stars)
-          .fill(null)
+          .fill()
           .map((i) => (
             <Star key={i} />
           ))}

@@ -24,7 +24,9 @@ const Datas = [
 const Services = () => {
   return (
     <div className="relative flex flex-col items-center">
-      <h1 className="p-3 my-32 text-3xl border-b-2 border-white">Services</h1>
+      <h1 className="p-3 my-32 text-3xl border-b-2 border-white heading">
+        Services
+      </h1>
       <div className="flex flex-wrap items-center justify-center">
         {Datas.map((data) => (
           <Card key={data.id} name={data.name} image={data.image} />
