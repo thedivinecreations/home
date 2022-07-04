@@ -8,14 +8,12 @@ import Link from "next/link";
 const Contact = () => {
   return (
     <div className="relative flex flex-col items-center pb-32">
-      <h1 className="p-3 my-32 text-3xl border-b-2 border-white heading">
-        Contact Us
-      </h1>
+      <h1 className=" heading">Contact Us</h1>
       <div className="flex flex-col items-center justify-around w-full space-y-16 text-xl md:flex-row md:space-y-0 md:space-x-16">
         <div className="flex flex-col items-center justify-between w-full space-y-16 text-2xl xl:flex-row xl:space-y-0">
           <div className="flex flex-col items-center mx-4 space-y-16">
             <div className="contactLink">
-              <div className="h-14 w-14">
+              <div className="w-8 h-8 md:h-14 md:w-14">
                 <Image src={Mail} height="100%" width="100%" />
               </div>
               <Link href="mailto:deepkarancreations@gmail.com">
@@ -23,7 +21,7 @@ const Contact = () => {
               </Link>
             </div>
             <div className="contactLink">
-              <div className="h-14 w-14">
+              <div className="w-8 h-8 md:h-14 md:w-14">
                 <Image src={Call} height="100%" width="100%" alt="call icon" />
               </div>
               <div>
@@ -40,7 +38,7 @@ const Contact = () => {
           </div>
           <div className="flex flex-col items-center mx-4 space-y-16 pridi">
             <div className="contactLink">
-              <div className="h-14 w-14">
+              <div className="w-8 h-8 md:h-14 md:w-14">
                 <Image src={Insta} height="100%" width="100%" />
               </div>
               <Link href="https://www.instagram.com/the.divinecreations/">
@@ -48,7 +46,7 @@ const Contact = () => {
               </Link>
             </div>
             <div className="contactLink">
-              <div className="h-14 w-14">
+              <div className="w-8 h-8 md:h-14 md:w-14">
                 <Image src={Linkdin} height="100%" width="100%" />
               </div>
               <Link href="https://www.linkedin.com/in/divinecreations">

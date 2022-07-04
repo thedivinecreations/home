@@ -3,12 +3,12 @@ import LoGo from "../public/LoGo.png";
 
 const Navbar = () => {
   return (
-    <header className="sticky top-0 z-10 text-xl font-normal text-white bg-black pottaOne ">
-      <div className="flex flex-col flex-wrap items-center justify-center p-4 mx-auto md:flex-row">
-        <a href="#" className="mx-8">
+    <header className="sticky top-0 z-10 font-normalbg-black pottaOne ">
+      <div className="flex flex-col flex-wrap items-center justify-center p-4 md:flex-row">
+        <a href="#" className="mx-0 md:mx-8">
           <Image src={LoGo} height={60} width={90} />
         </a>
-        <nav className="flex items-center justify-center my-4 text-base md:ml-auto ">
+        <nav className="flex flex-wrap items-center justify-center my-4 text-base md:ml-auto">
           <a className="link" href="#services">
             Services
           </a>
