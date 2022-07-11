@@ -3,6 +3,7 @@ import Edit from "../../public/eidting.png";
 import Graphic from "../../public/graphic.png";
 import Image from "next/image";
 import Link from "next/link";
+import WebsiteDev from "../../Data/WebsiteDev";
 
 const Portfolio = () => {
   return (
@@ -14,22 +15,14 @@ const Portfolio = () => {
             Website Development
           </div>
           <div className="flex flex-col space-y-4">
-            <div className="flex items-center space-x-4">
-              <Image src={Dev} height="20px" width="20px" />
-              <a href="https://www.google.com">Google.com</a>
-            </div>
-            <div className="flex items-center space-x-4">
-              <Image src={Dev} height="20px" width="20px" />
-              <a href="https://www.google.com">Google.com</a>
-            </div>
-            <div className="flex items-center space-x-4">
-              <Image src={Dev} height="20px" width="20px" />
-              <a href="https://www.google.com">Google.com</a>
-            </div>
-            <div className="flex items-center space-x-4 ">
-              <Image src={Dev} height="20px" width="20px" />
-              <a href="https://www.google.com">Google.com</a>
-            </div>
+            {WebsiteDev.map((website) => (
+              <div className="flex items-center space-x-4">
+                <Image src={Dev} height="20px" width="20px" />
+                <a href={website.link} target="_blank">
+                  {website.name}
+                </a>
+              </div>
+            ))}
           </div>
         </div>
         <div className="flex flex-col w-72 sm:w-auto">
