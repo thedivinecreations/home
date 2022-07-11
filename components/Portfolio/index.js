@@ -16,9 +16,9 @@ const Portfolio = () => {
           </div>
           <div className="flex flex-col space-y-4">
             {WebsiteDev.map((website) => (
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-4" key={website.id}>
                 <Image src={Dev} height="20px" width="20px" />
-                <a href={website.link} target="_blank">
+                <a href={website.link} target="_blank" rel="noreferrer">
                   {website.name}
                 </a>
               </div>
